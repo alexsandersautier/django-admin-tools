@@ -15,7 +15,7 @@ W001 = Warning(
 def check_admin_tools_configuration(app_configs=None, **kwargs):
     result = []
     try:
-        get_template('admin:admin/base.html')
+        get_template('admin/base.html')
     except TemplateDoesNotExist:
         result.append(W001)
     return result
